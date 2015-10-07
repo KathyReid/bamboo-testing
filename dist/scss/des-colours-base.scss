@@ -1,0 +1,82 @@
+/* Colours are declared here */
+
+/* White */
+$white: #fff !default;
+
+/* Black */
+$black: #000 !default;
+
+/* Charcoal */
+$charcoal: #343434 !default;
+
+/* Greys */
+$grey-xlight: #f7f7f7 !default;
+$grey-light: #ebebeb !default;
+$grey-medium: #706e6a !default;
+$grey-dark: #4b5457 !default;
+
+/* Oranges */
+$orange-xlight: #ffe3c3 !default;
+$orange-light: #fcb460 !default;
+$orange-medium: #cb6419 !default;
+$orange-dark: #a94d0c !default;
+
+/* Blues */
+$blue-xlight: #dbf5fa !default;
+$blue-light: #52b0c0 !default;
+$blue-medium: #058095 !default;
+$blue-dark: #046475 !default;
+
+/* Greens */
+
+    // Shamrock palette
+    $green-sr-xlight: #d7f6e6 !default;
+    $green-sr-light: #88dcb1 !default;
+    $green-sr-medium: #009548 !default;
+    $green-sr-dark: #28724f !default;
+
+    // Olive palette
+    $green-ol-xlight: #e1e6ba !default;
+    $green-ol-light: #b0bb66 !default;
+    $green-ol-medium: #778717 !default;
+    $green-ol-dark: #596612 !default;
+
+
+/* Reds */
+$red-xlight: #f9d6d6 !default;
+$red-light: #d67073 !default;
+$red-medium: #ab2328 !default;
+$red-dark: #8b272b !default;
+
+/* Purples */
+    // Violet Palette
+    $purple-vl-xlight: #d9dbf7 !default;
+    $purple-vl-light: #c2c4ef !default;
+    $purple-vl-medium: #7478c6 !default;
+    $purple-vl-dark: #595b87 !default;
+
+    // Royal Palette
+    $purple-ro-xlight: #f3e8f7 !default;
+    $purple-ro-light: #c8afd5 !default;
+    $purple-ro-medium: #5a4a61 !default;
+    $purple-ro-dark: #3a303e !default;
+
+/* Pinks */
+$pink-xlight: #fad7e3 !default;
+$pink-light: #f09cad !default;
+$pink-medium: #d0536c !default;
+$pink-dark: #84344e !default;
+
+/* Teals */
+$teal-xlight: #d5eee8 !default;
+$teal-light: #96dbce !default;
+$teal-medium: #3a8d7b !default;
+$teal-dark: #2a685a !default;
+
+// Redefine Boostraps gray variables. Some are duplicated with English spelling rather than American (grey not gray)
+$gray-base: $black !default;
+$gray-dark: $grey-dark !default;
+$gray-darkest: $charcoal !default;
+$gray: $grey-medium !default;
+$gray-light: $grey-light !default;
+$gray-lighter: $grey-xlight !default;

@@ -1,0 +1,32 @@
+/* Font Definitions */
+
+// Open Sans
+$OpenSansPath: "../fonts/open-sans" !default;
+
+// Worldly
+@font-face{
+    font-family:'Worldly Regular';
+    src: url("../fonts/worldly/worldlyregular.woff") format("woff"),
+         url("../fonts/worldly/worldlyregular.ttf") format("truetype");
+}
+
+@font-face{font-family:'Worldly Bold';
+    src: url("../fonts/worldly/worldlybold.woff") format("woff"),
+         url("../fonts/worldly/worldlybold.ttf") format("truetype");
+}
+
+@font-face{font-family:'Worldly Light';
+    src: url("../fonts/worldly/WorldlyLight-webfont.eot");
+    src: url("../fonts/worldly/WorldlyLight-webfont.svg") format("svg"),
+         url("../fonts/worldly/WorldlyLight-webfont.ttf") format("truetype"),
+         url("../fonts/worldly/WorldlyLight-webfont.woff") format("woff");
+}
+
+/* Font Awesome font path */
+$fa-font-path:        "../fonts/font-awesome" !default;
+
+/* Font Families */
+$open-sans: "Open Sans", Arial, Helvetica, sans-serif !default;
+$worldly-light: "Worldly Light", "Open Sans", Arial, Helvetica, sans-serif !default;
+$worldly-regular: "Worldly Regular", "Open Sans", Arial, Helvetica, sans-serif !default;
+$worldly-bold: "Worldly Bold", "Open Sans", Arial, Helvetica, sans-serif !default;
