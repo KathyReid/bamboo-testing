@@ -1,0 +1,17 @@
+{
+    "name": "esolutions-base-framework",
+    "description": "Deakin's base branding variables and utilities to be used across various frameworks and projects",
+    "main": [
+        "des-base-framework.less",
+        "dist/des-base-framework.less",
+        "dist/des-base-framework.scss"
+    ],
+    "keywords": [
+        "deakin"
+    ],
+    "license": "MIT",
+    "ignore": [
+        ".gitignore",
+        ".npmignore"
+    ]
+}

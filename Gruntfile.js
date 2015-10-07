@@ -4,17 +4,21 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
 
+        // Compile the control Less file to make sure there are no errors
+        // The resulting css isn't required so it is placed in a
+        // temp folder
         less: {
-            production: {
+            test: {
                 options: {
                     compress: false
                 },
                 files: {
-                    "temp/css/des-ui-framework-base.css": "des-ui-framework-base.less"
+                    "temp/css/des-base-framework.css": "des-base-framework.less"
                 }
             }
         },
 
+        // Copy the Less components into the distribution folder
         copy: {
             main: {
                 files: [
@@ -24,15 +28,16 @@ module.exports = function (grunt) {
             },
         },
 
+        // Convert the individual Less files to Sass
         lessToSass: {
             convert: {
                 files: [{
                     expand: true,
-                    cwd: "less/",
+                    cwd: "dist/less/",
                     src: ['*.less'],
                     ext: ".scss",
                     dest: "dist/scss"
-                }]
+                }],
             }
         }
     });
