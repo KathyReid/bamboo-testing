@@ -13,7 +13,7 @@ module.exports = function (grunt) {
                     compress: false
                 },
                 files: {
-                    "temp/css/des-base-framework.css": "less/des-base-framework.less"
+                    "temp/css/des-base-variables.css": "less/des-base-variables.less"
                 }
             }
         },
@@ -40,9 +40,17 @@ module.exports = function (grunt) {
         // Replace any instances of the word 'less' with 'scss' (lessToSass only changes
         // syntax but not words such as those used in a file path
         replace: {
-            less: {
+            control: {
                 src: ['temp/less/*.less'],
-                dest: 'temp/converted/less/',
+                dest: 'temp/converted/',
+                replacements: [{
+                    from: 'less',
+                    to: 'scss'
+                }]
+            },
+            variables: {
+                src: ['temp/less/variables/*.less'],
+                dest: 'temp/converted/variables/',
                 replacements: [{
                     from: 'less',
                     to: 'scss'
@@ -55,10 +63,17 @@ module.exports = function (grunt) {
             convert: {
                 files: [{
                     expand: true,
-                    cwd: "temp/converted/less",
+                    cwd: "temp/converted/",
                     src: ['*.less'],
                     ext: ".scss",
-                    dest: "dist/scss"
+                    dest: "dist/scss/"
+                },
+                {
+                    expand: true,
+                    cwd: "temp/converted/variables/",
+                    src: ['*.less'],
+                    ext: ".scss",
+                    dest: "dist/scss/variables/"
                 }],
             }
         },

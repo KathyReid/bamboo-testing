@@ -25,13 +25,21 @@ Note that it is not recommended that you clone the master branch from Stash as t
 ## How to Use
 
 ### Importing into your projects
-Place the following import statement into your code so that it will get compiled along with the rest of your project. You will need to modify the path to reflect where you install the ui-framework-base library:
+Place the following import statements into your code so that it will get compiled along with the rest of your project. You will need to modify the path to reflect where you install the ui-framework-base library:
 
 #### Less
-`@import "path-to-base-framework .../esolutions-base-framework/dist/less/des-base-framework.less";`
+```
+@import "path-to-base-framework .../esolutions-base-framework/dist/less/des-base-fonts.less";
+@import "path-to-base-framework .../esolutions-base-framework/dist/less/des-base-variables.less";
+```
 
 #### Sass
-`@import "path-to-base-framework .../esolutions-base-framework/dist/scss/des-base-framework.scss";`
+```
+@import "path-to-base-framework .../esolutions-base-framework/dist/scss/des-base-variables.scss";
+@import "path-to-base-framework .../esolutions-base-framework/dist/scss/des-base-fonts.scss";
+```
+
+*Note that the order of the import statements is different for each pre-processor.
 
 ### Modifying the font references
 Font path references refer to where the fonts are located in relation to the **css file** that is referencing them (not the less/sass files). You may need to modify these variables depending on where you package your fonts and stylesheets.
