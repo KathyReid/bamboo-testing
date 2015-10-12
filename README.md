@@ -16,8 +16,8 @@ The following are available in both Sass and Less formats
 * Deakin Worldly font
 
 ## Installation
-* [Bower](http://bower.io/): `$ bower install esolutions-base-framework`
-* [npm](https://www.npmjs.com/): `$ npm install esolutions-base-framework`
+* [Bower](http://bower.io/): `$bower install esolutions-base-framework`
+* [npm](https://www.npmjs.com/): `$npm install esolutions-base-framework`
 * Clone the latest release from Stash
 
 Note that it is not recommended that you clone the master branch from Stash as this is the global working copy. Instead get the Base UI Framework by getting a 'release' version from one of the methods listed above.
@@ -28,13 +28,13 @@ Note that it is not recommended that you clone the master branch from Stash as t
 Place the following import statements into your code so that it will get compiled along with the rest of your project. You will need to modify the path to reflect where you install the ui-framework-base library:
 
 #### Less
-```
+```less
 @import "path-to-base-framework .../esolutions-base-framework/dist/less/des-base-fonts.less";
 @import "path-to-base-framework .../esolutions-base-framework/dist/less/des-base-variables.less";
 ```
 
 #### Sass
-```
+```sass
 @import "path-to-base-framework .../esolutions-base-framework/dist/scss/des-base-variables.scss";
 @import "path-to-base-framework .../esolutions-base-framework/dist/scss/des-base-fonts.scss";
 ```
@@ -47,7 +47,7 @@ Font path references refer to where the fonts are located in relation to the **c
 By default this path is located one folder up from the stylesheet in a folder called 'fonts'.
 
 #### Less
-```css
+```less
 // Font Awesome font path
 @fa-font-path: "../fonts/font-awesome";
 
@@ -59,7 +59,7 @@ By default this path is located one folder up from the stylesheet in a folder ca
 ```
 
 #### Sass
-```css
+```sass
 // Font Awesome font path
 $fa-font-path: "../fonts/font-awesome" !default;
 

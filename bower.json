@@ -1,5 +1,6 @@
 {
     "name": "esolutions-base-framework",
+    "author": "Digital Engagement Solutions & Platforms <timothy.randall@deakin.edu.au>",
     "description": "Deakin's base branding variables and utilities to be used across various frameworks and projects",
     "main": [
         "des-base-framework.less",

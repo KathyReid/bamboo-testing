@@ -35,15 +35,15 @@
     $worldly-bold: "Worldly Bold", "Open Sans", Arial, Helvetica, sans-serif !default;
 
 /* Font Classes */
-    // Worldly
+    // Brand Font
 
     // Use the !important selector because 'worldly' text should also override the base
-    .worldly {
+    .deakin-type-regular {
       font-family: "Worldly Regular", "Open Sans", Arial, Helvetica, sans-serif !important;
     }
-    .worldly-light {
+    .deakin-type-light {
       font-family: "Worldly Light", "Open Sans", Arial, Helvetica, sans-serif !important;
     }
-    .worldly-bold {
+    .deakin-type-bold {
       font-family: "Worldly Bold", "Open Sans", Arial, Helvetica, sans-serif !important;
     }
