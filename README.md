@@ -100,11 +100,13 @@ Modifications can be made to the Base UI Framework by modifying, adding or delet
 ├── img/
 ├── less/
 ```
+
 ### Less Development Files
 The core brand files are maintained in Less format. These files are then converted into Sass using Grunt, allowing the Base UI Framework to support both pre-processors but only requiring one set of files to be maintained.
 
 #### Less Development Hierarchy
-The 'less/' folder consists of the following structure:
+The ```less/``` folder consists of the following structure:
+
 ```
 less/
 ├── des-base-fonts.less
@@ -119,6 +121,7 @@ The ```.less``` files at the top of the hierarchy are consolidation files that `
 
 ### Grunt
 Any modified files will need to be compiled by running the following Grunt command:
+
 ```bash
 $grunt
 ```
