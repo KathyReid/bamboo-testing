@@ -36,7 +36,7 @@ des-base-framework/
 ## How to Use
 
 ### Importing into your projects
-Place the following import statements into your code so that the Base UI Framework will get compiled along with the rest of your project. Note that you will need to modify the path to reflect where you install Base UI Framework library:
+Place the following import statements into your code so that the Base UI Framework will get compiled along with the rest of your project. Note that you will need to modify the path to reflect where you have installed Base UI Framework library:
 
 #### Less
 ```less
@@ -89,7 +89,7 @@ Modifications can be made to the Base UI Framework by modifying, adding or delet
 ```
 ├── fonts/
 ├── img/
-├── less/
+└── less/
 ```
 
 ### Less Development Files
