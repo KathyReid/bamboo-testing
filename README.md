@@ -123,7 +123,7 @@ This script will compile and package all development files and place them in the
 All code and documentation is copyright [Deakin University](http://deakin.edu.au) and released under the [MIT license](https://opensource.org/licenses/MIT) with the exception of:
 
 * Font Awesome: Copyright [Dave Grundy](http://fontawesome.io/license/)
-* Open Sans: Copyright [Steve Matteson](http://www.monotype.com/studio/steve-matteson)
+* Open Sans: Copyright [Steve Matteson](https://www.google.com/fonts/specimen/Open+Sans)
 
 ## Creators
 Created and maintained by the Digital Engagement Solutions and Platforms team, Deakin eSolutions.
