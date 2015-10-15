@@ -1,17 +1,8 @@
 # eSolutions Base UI Framework
 The Base UI Framework includes all the core global assets that are shared between all Deakin eSolutions' digital projects. This includes elements such as colours, fonts and icons.
 
+## Current Version
 Version: 1.0.0
-
-## Table of contents
-
-- [What's Included](#whats-included)
-- [Project Structure](#project-structre)
-- [Installation](#installation)
-- [How to Use](#how-to-use)
-- [Making Modifications](#making-modifications)
-- [Copyright and License](#copyright-and-license)
-- [Creators](#creators)
 
 ## What's Included
 * Deakin's colour palette
