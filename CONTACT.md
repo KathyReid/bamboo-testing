@@ -1,24 +1,27 @@
-NAME OF REPOSITORY - Public Repository contact details
+Deakin eSolutions Base UI Framework
 ======================================================
 
 Responsible Officer
 -----------------------------
 
-The Responsible Officer for this repository is;
+[Kathy Reid](http://www.deakin.edu.au/profiles/kathy-reid)
 
-Kathy Reid <kathy.reid@deakin.edu.au>
-http://www.deakin.edu.au/profiles/kathy-reid
-Platforms and Operations Manager, eSolutions
+Title: Platforms and Operations Manager, eSolutions
+
+Email [kathy.reid@deakin.edu.au](kathy.reid@deakin.edu.au)
+
 
 Operational contact
 -------------------
 
-Timothy Randall <timothy.randall@deakin.edu.au>
-http://www.deakin.edu.au/profiles/timothy-randall
-Front-end Designer / Developer, eSolutions
+[Timothy Randall](http://www.deakin.edu.au/profiles/timothy-randall)
+
+Title: Front-end Designer / Developer, eSolutions
+
+Email: [timothy.randall@deakin.edu.au](mailto:timothy.randall@deakin.edu.au)
+
 
 Alternative contact
 -------------------
 
-eSolutions Service Desk
-http://www.deakin.edu.au/about-deakin/administrative-divisions/esolutions/it-help
+[eSolutions Service Desk](http://www.deakin.edu.au/about-deakin/administrative-divisions/esolutions/it-help)

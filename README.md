@@ -6,10 +6,10 @@ Version: 1.0.0
 
 ## What's Included
 * Deakin's colour palette
-* The Font Awesome icon library (v4.4.0)
-* Open Sans font
 * Deakin Worldly font
 * Deakin Logo
+* The Font Awesome icon library (v4.4.0)
+* Open Sans font
 
 ## Installation
 * [Bower](http://bower.io/): `$bower install des-base-framework`
@@ -120,10 +120,7 @@ $grunt
 This script will compile and package all development files and place them in the ```/dist``` folder.
 
 ## Copyright and License
-All code and documentation is copyright [Deakin University](http://deakin.edu.au) and released under the [MIT license](https://opensource.org/licenses/MIT) with the exception of:
-
-* Font Awesome: Copyright [Dave Grundy](http://fontawesome.io/license/)
-* Open Sans: Copyright [Steve Matteson](https://www.google.com/fonts/specimen/Open+Sans)
+All code and documentation is copyright [Deakin University](http://deakin.edu.au) and released under the [Creative Commons 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
 ## Creators
 Created and maintained by the Digital Engagement Solutions and Platforms team, Deakin eSolutions.

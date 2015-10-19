@@ -10,7 +10,7 @@
     "keywords": [
         "deakin"
     ],
-    "license": "MIT",
+    "license": "CC BY 4.0",
     "ignore": [
         ".gitignore",
         ".npmignore"
