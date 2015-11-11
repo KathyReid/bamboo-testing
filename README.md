@@ -19,7 +19,7 @@ Version: 1.0.0
 *Note that it is not recommended that you clone the master branch from Stash as this is the global working copy. Instead get the Base UI Framework by getting a 'release' version from one of the methods listed above.
 
 ## Project Structure
-The project has the following structure. You will find everything you need in the ```dist/``` folder unless you plan on doing development to the Base UI Framework itself (see the 'Making Modifications' section).
+The project has the following structure. You will find everything you need in the `dist/` folder unless you plan on doing development to the Base UI Framework itself (see the 'Making Modifications' section).
 
 ```
 des-base-framework/
@@ -50,12 +50,12 @@ Place the following import statements into your code so that the Base UI Framewo
 @import "path-to-base-framework .../des-base-framework/dist/scss/des-base-fonts.scss";
 ```
 
-*Note that the order of the ```@import``` statements is different for each pre-processor.
+*Note that the order of the `@import` statements is different for each pre-processor.
 
 ### Modifying the font references
 Font path references refer to where the fonts are located in relation to the **CSS file** that is referencing them (not the Less/Sass files that contain the import statement). You may need to modify these variables depending on where you package your fonts and stylesheets.
 
-By default the font path is located one folder up from the stylesheet in a folder called ```/fonts```.
+By default the font path is located one folder up from the stylesheet in a folder called `/fonts`.
 
 #### Less
 ```less
@@ -96,7 +96,7 @@ Modifications can be made to the Base UI Framework by modifying, adding or delet
 The core brand files are maintained in Less format. These files are then converted into Sass using Grunt, allowing the Base UI Framework to support both pre-processors but only requiring one set of files to be maintained.
 
 #### Less Development Hierarchy
-The ```less/``` folder consists of the following structure:
+The `less/` folder consists of the following structure:
 
 ```
 less/
@@ -108,7 +108,7 @@ less/
     └── des-fonts.less
 ```
 
-The ```.less``` files at the top of the hierarchy are consolidation files that ```@import``` other component files from the second level folders. Make sure that any new files that you add to the project are imported into a corresponding consolidation file.
+The `.less` files at the top of the hierarchy are consolidation files that `@import` other component files from the second level folders. Make sure that any new files that you add to the project are imported into a corresponding consolidation file.
 
 ### Grunt
 Any modified files will need to be compiled by running the following Grunt command:
@@ -117,7 +117,7 @@ Any modified files will need to be compiled by running the following Grunt comma
 $grunt
 ```
 
-This script will compile and package all development files and place them in the ```/dist``` folder.
+This script will compile and package all development files and place them in the `/dist` folder.
 
 ## Copyright and License
 All code and documentation is copyright [Deakin University](http://deakin.edu.au) and released under the [Creative Commons 4.0 License](https://creativecommons.org/licenses/by/4.0/) with the exception of:
