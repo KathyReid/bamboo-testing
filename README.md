@@ -120,7 +120,10 @@ $grunt
 This script will compile and package all development files and place them in the ```/dist``` folder.
 
 ## Copyright and License
-All code and documentation is copyright [Deakin University](http://deakin.edu.au) and released under the [Creative Commons 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+All code and documentation is copyright [Deakin University](http://deakin.edu.au) and released under the [Creative Commons 4.0 License](https://creativecommons.org/licenses/by/4.0/) with the exception of:
+
+* Font Awesome: Copyright [Dave Grundy](http://fontawesome.io/license/)
+* Open Sans: Copyright [Steve Matteson](https://www.google.com/fonts/specimen/Open+Sans)
 
 ## Creators
 Created and maintained by the Digital Engagement Solutions and Platforms team, Deakin eSolutions.

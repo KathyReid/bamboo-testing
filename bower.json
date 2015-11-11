@@ -11,8 +11,13 @@
         "deakin"
     ],
     "license": "CC BY 4.0",
+    "license": "CC-BY-4.0",
     "ignore": [
         ".gitignore",
         ".npmignore"
-    ]
+    ],
+    "dependencies": {
+        "font-awesome": "latest",
+        "open-sans-fontface": "latest"
+    }
 }
