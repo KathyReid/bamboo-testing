@@ -16,7 +16,7 @@ Version: 1.0.0
 * [npm](https://www.npmjs.com/): `$npm install des-base-framework`
 * Clone the latest release from Stash
 
-Note that it is not recommended that you clone the master branch from Stash as this is the global working copy. Instead get the Base UI Framework by getting a 'release' version from one of the methods listed above.
+*Note that it is not recommended that you clone the master branch from Stash as this is the global working copy. Instead get the Base UI Framework by getting a 'release' version from one of the methods listed above.
 
 ## Project Structure
 The project has the following structure. You will find everything you need in the ```dist/``` folder unless you plan on doing development to the Base UI Framework itself (see the 'Making Modifications' section).
@@ -53,9 +53,9 @@ Place the following import statements into your code so that the Base UI Framewo
 *Note that the order of the ```@import``` statements is different for each pre-processor.
 
 ### Modifying the font references
-Font path references refer to where the fonts are located in relation to the **css file** that is referencing them (not the Less/Sass files that contain the import statement). You may need to modify these variables depending on where you package your fonts and stylesheets.
+Font path references refer to where the fonts are located in relation to the **CSS file** that is referencing them (not the Less/Sass files that contain the import statement). You may need to modify these variables depending on where you package your fonts and stylesheets.
 
-By default this path is located one folder up from the stylesheet in a folder called ```/fonts```.
+By default the font path is located one folder up from the stylesheet in a folder called ```/fonts```.
 
 #### Less
 ```less
@@ -103,9 +103,9 @@ less/
 ├── des-base-fonts.less
 ├── des-base-variables
 └── variables/
-    ├── des-brand-base.less
-    ├── des-colours-base.less
-    └── des-fonts-base.less
+    ├── des-brand.less
+    ├── des-colours.less
+    └── des-fonts.less
 ```
 
 The ```.less``` files at the top of the hierarchy are consolidation files that ```@import``` other component files from the second level folders. Make sure that any new files that you add to the project are imported into a corresponding consolidation file.

@@ -1,0 +1,49 @@
+/* Font Paths*/
+    // Open Sans
+    $OpenSansPath: "../fonts/open-sans" !default;
+
+    // Worldly
+    $worldly-path: "../fonts/worldly" !default;
+
+    // Font Awesome font path
+    $fa-font-path: "../fonts/font-awesome" !default;
+
+/* Font Definitions */
+    // Worldly
+    @font-face{
+        font-family:'Worldly Regular';
+        src: url("#{$worldly-path}/worldlyregular.woff") format("woff"),
+             url("#{$worldly-path}/worldlyregular.ttf") format("truetype");
+    }
+
+    @font-face{font-family:'Worldly Bold';
+        src: url("#{$worldly-path}/worldlybold.woff") format("woff"),
+             url("#{$worldly-path}/worldlybold.ttf") format("truetype");
+    }
+
+    @font-face{font-family:'Worldly Light';
+        src: url("#{$worldly-path}/WorldlyLight-webfont.eot");
+        src: url("#{$worldly-path}/WorldlyLight-webfont.svg") format("svg"),
+             url("#{$worldly-path}/WorldlyLight-webfont.ttf") format("truetype"),
+             url("#{$worldly-path}/WorldlyLight-webfont.woff") format("woff");
+    }
+
+/* Font Families */
+    $open-sans: "Open Sans", Arial, Helvetica, sans-serif !default;
+    $worldly-light: "Worldly Light", "Open Sans", Arial, Helvetica, sans-serif !default;
+    $worldly-regular: "Worldly Regular", "Open Sans", Arial, Helvetica, sans-serif !default;
+    $worldly-bold: "Worldly Bold", "Open Sans", Arial, Helvetica, sans-serif !default;
+
+/* Font Classes */
+    // Brand Font
+
+    // Use the !important selector because 'worldly' text should also override the base
+    .deakin-type-regular {
+      font-family: "Worldly Regular", "Open Sans", Arial, Helvetica, sans-serif !important;
+    }
+    .deakin-type-light {
+      font-family: "Worldly Light", "Open Sans", Arial, Helvetica, sans-serif !important;
+    }
+    .deakin-type-bold {
+      font-family: "Worldly Bold", "Open Sans", Arial, Helvetica, sans-serif !important;
+    }
