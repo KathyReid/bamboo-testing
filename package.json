@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://stash.deakin.edu.au/projects/DESP/repos/base-framework/"
+    "url": "https://stash.deakin.edu.au/projects/desp/repos/base-framework/"
   },
   "files": [
     "des-base-framework.less",
