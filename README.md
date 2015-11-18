@@ -13,7 +13,6 @@ Version: 1.0.0
 
 ## Installation
 * [Bower](http://bower.io/): `$bower install des-base-framework`
-* [npm](https://www.npmjs.com/): `$npm install des-base-framework`
 * Clone the latest release from Stash
 
 *Note that it is not recommended that you clone the master branch from Stash as this is the global working copy. Instead get the Base UI Framework by getting a 'release' version from one of the methods listed above.
