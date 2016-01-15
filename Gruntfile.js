@@ -34,7 +34,12 @@ module.exports = function (grunt) {
                 files: [
                     {   expand: true, src: "fonts/**", dest: "dist/" },
                 ],
-            }
+            },
+            images: {
+                files: [
+                    {   expand: true, src: "img/**", dest: "dist/" },
+                ],
+            },
         },
 
         // Replace any instances of the word 'less' with 'scss' (lessToSass only changes

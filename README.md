@@ -2,7 +2,7 @@
 The Base UI Framework includes all the core global assets that are shared between all Deakin eSolutions' digital projects. This includes elements such as colours, fonts and icons.
 
 ## Current Version
-Version: 1.0.0
+Version: 1.0.1
 
 ## What's Included
 * Deakin's colour palette
@@ -126,3 +126,7 @@ All code and documentation is copyright [Deakin University](http://deakin.edu.au
 
 ## Creators
 Created and maintained by the Digital Engagement Solutions and Platforms team, Deakin eSolutions.
+
+## Changelog
+* v1.0.1 - Updated @blue-light/$blue-light colour value 
+* v1.0.0 - Initial Release
