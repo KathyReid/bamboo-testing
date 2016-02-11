@@ -129,9 +129,9 @@ Created and maintained by the Digital Engagement Solutions and Platforms team, D
 
 ## Changelog
 * v1.0.1 - 
-  * Updated @blue-light/$blue-light colour value
-  * Updated font-awesome version
-  * Moved all working files into 'app' folder
-  * Open Sans and Font Awesome are now downloaded with bower
-  * Updated Gruntfile as necessary to support the new folder structure.
+    * Updated @blue-light/$blue-light colour value
+    * Updated font-awesome version
+    * Moved all working files into 'app' folder
+    * Open Sans and Font Awesome are now downloaded with bower
+    * Updated Gruntfile as necessary to support the new folder structure.
 * v1.0.0 - Initial Release
