@@ -129,9 +129,10 @@ Created and maintained by the Digital Engagement Solutions and Platforms team, D
 
 ## Changelog
 * v1.0.1 - 
-    * Updated @blue-light/$blue-light colour value
+    * Updated @blue-light/$blue-light, @grey-xlight/$grey-xlight and @grey-light/$grey-light colour values
     * Updated font-awesome version
+    * Added fav icon and Deakin logo with keyline
     * Moved all working files into 'app' folder
-    * Open Sans and Font Awesome are now downloaded with bower
+    * Open Sans and Font Awesome are now downloaded with bower and then copied to 'font' folder with Grunt
     * Updated Gruntfile as necessary to support the new folder structure.
 * v1.0.0 - Initial Release
