@@ -27,7 +27,7 @@ module.exports = function (grunt) {
             styles: {
                 files: [
                     {   expand: true, cwd: "app/less", src: ["**"], dest: "dist/less" },
-                    {   expand: true, cwd: "app/less", src: ["**"], dest: "temp/" },
+                    {   expand: true, cwd: "app/less", src: ["**"], dest: "temp/less" },
                 ],
             },
             fonts: {
@@ -61,7 +61,8 @@ module.exports = function (grunt) {
         // Clean the distribution folder before beginning
         // to compile the project
         clean: {
-          all: ["dist"]
+            dist: ["dist"],
+            temp: ["temp"]
         }, 
 
         // Replace any instances of the word 'less' with 'scss' (lessToSass only changes
@@ -157,6 +158,7 @@ module.exports = function (grunt) {
     grunt.registerTask(
         "default",
             [
+                "clean:temp",
                 "less",
                 "copy",
                 "replace",
@@ -177,7 +179,8 @@ module.exports = function (grunt) {
     grunt.registerTask(
         "publish", 
             [
-                "clean",
+                "clean:dist",
+                "clean:temp",
                 "bowercopy",
                 "less",
                 "copy",
