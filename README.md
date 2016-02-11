@@ -135,4 +135,4 @@ Created and maintained by the Digital Engagement Solutions and Platforms team, D
     * Moved all working files into 'app' folder
     * Open Sans and Font Awesome are now downloaded with bower and then copied to 'font' folder with Grunt
     * Updated Gruntfile as necessary to support the new folder structure.
-* v1.0.0 - Initial Release
+* v1.0.0 - Initial Release.
