@@ -8,7 +8,7 @@ Version: 1.0.1
 * Deakin's colour palette
 * Deakin Worldly font
 * Deakin Logo
-* The Font Awesome icon library (v4.4.0)
+* The Font Awesome icon library (v4.5.0)
 * Open Sans font
 
 ## Installation
@@ -128,5 +128,10 @@ All code and documentation is copyright [Deakin University](http://deakin.edu.au
 Created and maintained by the Digital Engagement Solutions and Platforms team, Deakin eSolutions.
 
 ## Changelog
-* v1.0.1 - Updated @blue-light/$blue-light colour value 
+* v1.0.1 - 
+  * Updated @blue-light/$blue-light colour value
+  * Updated font-awesome version
+  * Moved all working files into 'app' folder
+  * Open Sans and Font Awesome are now downloaded with bower
+  * Updated Gruntfile as necessary to support the new folder structure.
 * v1.0.0 - Initial Release

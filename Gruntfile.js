@@ -13,34 +13,56 @@ module.exports = function (grunt) {
                     compress: false
                 },
                 files: {
-                    "temp/css/des-base-variables.css": "less/des-base-variables.less"
+                    "temp/css/des-base-variables.css": "app/less/des-base-variables.less"
                 }
             }
         },
 
-        // Copy the Less components and fonts into the distribution folder
-        // Also do a second copy to a temp folder to change some less syntax to sass
-        // before doing the full sass conversion
-        // This is done here because lessToSass does not pick up words in file paths
-        // e.g. font-awesome/less/font-awesome.less will keep the same file path
+        // Copy all less source code, fonts and libraries to the distribution folder
         copy: {
+                    
+            // Create a copy of the less files in the 'temp' folder. These are then
+            // modified with the 'replace' task and then used to compile the sass versions 
+            // of the source files
             styles: {
                 files: [
-                    {   expand: true, src: "less/**", dest: "dist/" },
-                    {   expand: true, src: "less/**", dest: "temp/" },
+                    {   expand: true, cwd: "app/less", src: ["**"], dest: "dist/less" },
+                    {   expand: true, cwd: "app/less", src: ["**"], dest: "temp/" },
                 ],
             },
             fonts: {
                 files: [
-                    {   expand: true, src: "fonts/**", dest: "dist/" },
+                    {   expand: true, cwd: "app/fonts", src: ["**"], dest: "dist/fonts/" },
                 ],
             },
             images: {
                 files: [
-                    {   expand: true, src: "img/**", dest: "dist/" },
+                    {   expand: true, cwd: "app/img", src: ["**"], dest: "dist/img/" },
                 ],
             },
         },
+        
+        // Copies distribution files from the bower_components folder into the dist folder
+        // Any changes to packages will require this list to be manually changed
+        // accordingly as there is no fully automated way to copy across the
+        // distribution files
+        bowercopy: {
+            options: {
+                destPrefix: "app/fonts/",
+            },
+            fonts: {
+                files: {
+                    "open-sans": "open-sans-fontface",
+                    "font-awesome": "font-awesome"
+                }
+            },
+        },
+        
+        // Clean the distribution folder before beginning
+        // to compile the project
+        clean: {
+          all: ["dist"]
+        }, 
 
         // Replace any instances of the word 'less' with 'scss' (lessToSass only changes
         // syntax but not words such as those used in a file path
@@ -63,7 +85,7 @@ module.exports = function (grunt) {
             }
         },
 
-        // Convert the individual Less files to Sass
+        // Convert the individual Less files to Sass for distribution
         lessToSass: {
             convert: {
                 files: [{
@@ -122,23 +144,47 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-less-to-sass");
     grunt.loadNpmTasks("grunt-contrib-less");
     grunt.loadNpmTasks("grunt-contrib-copy");
-    grunt.loadNpmTasks('grunt-text-replace');
+    grunt.loadNpmTasks("grunt-text-replace");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-notify");
+    grunt.loadNpmTasks("grunt-bowercopy");
+    grunt.loadNpmTasks("grunt-contrib-clean");
 
     // Default tasks
     grunt.task.run("notify_hooks");
+    
+    // Default task for development
+    grunt.registerTask(
+        "default",
+            [
+                "less",
+                "copy",
+                "replace",
+                "lessToSass",
+                "watch"
+            ]
+    );
+    
+    // Updates the font libraries from the 'bower_components' folder
+    grunt.registerTask(
+        "updateLibraries", 
+            [
+                "bowercopy"
+            ]
+    );
+    
+    // Performs all tasks to prepare for publishing
+    grunt.registerTask(
+        "publish", 
+            [
+                "clean",
+                "bowercopy",
+                "less",
+                "copy",
+                "replace",
+                "lessToSass",
+            ]
+    );
 
-    // Load all tasks
-        // Compiles and packages everything
-        grunt.registerTask(
-            "default",
-                [
-                    "less",
-                    "copy",
-                    "replace",
-                    "lessToSass",
-                    "watch"
-                ]
-        );
+    
 };
