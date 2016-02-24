@@ -2,7 +2,7 @@
   "name": "des-base-framework",
   "author": "Digital Engagement Solutions & Platforms <timothy.randall@deakin.edu.au>",
   "description": "Deakin's base branding variables and utilities to be used across various frameworks and projects",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://stash.deakin.edu.au/projects/desp/repos/base-framework/"
@@ -23,6 +23,8 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-less-to-sass": "0.0.10",
     "grunt-notify": "^0.4.1",
-    "grunt-text-replace": "^0.4.0"
+    "grunt-text-replace": "^0.4.0",
+    "grunt-bowercopy": "^1.2.3",
+    "grunt-contrib-clean": "^0.6.0"
   }
 }
