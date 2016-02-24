@@ -2,7 +2,7 @@
   "name": "des-base-framework",
   "author": "Digital Engagement Solutions & Platforms <timothy.randall@deakin.edu.au>",
   "description": "Deakin's base branding variables and utilities to be used across various frameworks and projects",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "https://stash.deakin.edu.au/projects/desp/repos/base-framework/"
